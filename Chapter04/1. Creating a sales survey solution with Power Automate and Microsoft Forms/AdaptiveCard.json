@@ -9,7 +9,7 @@
     },
     {
       "type": "TextBlock",
-      "text": "{$root.customer}",
+      "text": "{customer}",
       "wrap": true,
       "weight": "Bolder"
     },
@@ -24,7 +24,7 @@
     },
     {
       "type": "TextBlock",
-      "text": "{$root.services}"
+      "text": "{services}"
     },
     {
       "type": "TextBlock",
@@ -33,7 +33,7 @@
     },
     {
       "type": "TextBlock",
-      "text": "{$root.reasons}"
+      "text": "{reasons}"
     },
     {
       "type": "TextBlock",
@@ -42,7 +42,7 @@
     },
     {
       "type": "TextBlock",
-      "text": "{$root.rating} stars"
+      "text": "{rating} stars"
     }
   ],
   "actions": [
@@ -56,5 +56,5 @@
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-  "version": "1.2"
+  "version": "1.4"
 }
