@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "7179e864-20b4-4e95-ad17-63f56d3d8bdd",
+		"name": "AccuWeather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "City Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dataservice.accuweather.com/locations/v1/cities/search?apikey=&q=Mississauga",
+					"protocol": "http",
+					"host": [
+						"dataservice",
+						"accuweather",
+						"com"
+					],
+					"path": [
+						"locations",
+						"v1",
+						"cities",
+						"search"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": ""
+						},
+						{
+							"key": "q",
+							"value": "Mississauga"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "City Search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://dataservice.accuweather.com/locations/v1/cities/search?apikey=S9XcOzuqDVjEGOzlXACwz60u32ngjVCE&q=Mississauga",
+							"protocol": "http",
+							"host": [
+								"dataservice",
+								"accuweather",
+								"com"
+							],
+							"path": [
+								"locations",
+								"v1",
+								"cities",
+								"search"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "S9XcOzuqDVjEGOzlXACwz60u32ngjVCE"
+								},
+								{
+									"key": "q",
+									"value": "Mississauga"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 21 Feb 2022 23:48:12 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Request-Context",
+							"value": "appId=cid-v1:cc223195-bccf-4201-9cde-374567896e20"
+						},
+						{
+							"key": "RateLimit-Limit",
+							"value": "50"
+						},
+						{
+							"key": "RateLimit-Remaining",
+							"value": "43"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "origin, x-requested-with, accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=2590"
+						},
+						{
+							"key": "Expires",
+							"value": "Tue, 22 Feb 2022 00:31:22 GMT"
+						},
+						{
+							"key": "Akamai-GRN",
+							"value": "0.98112817.1645487292.3445f99e"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3628800"
+						},
+						{
+							"key": "Accept",
+							"value": "*/*"
+						},
+						{
+							"key": "Accept-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Accept-Encoding",
+							"value": "deflate"
+						},
+						{
+							"key": "Accept-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Host",
+							"value": "api.accuweather.com"
+						},
+						{
+							"key": "Postman-Token",
+							"value": "176f66a5-a9e4-4b2d-9748-97ad69104fa6"
+						},
+						{
+							"key": "User-Agent",
+							"value": "PostmanRuntime/7.29.0"
+						},
+						{
+							"key": "X-Forwarded-For",
+							"value": "85.155.120.61"
+						},
+						{
+							"key": "X-Forwarded-Port",
+							"value": "80"
+						},
+						{
+							"key": "X-Forwarded-Proto",
+							"value": "http"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Version\": 1,\n        \"Key\": \"55071\",\n        \"Type\": \"City\",\n        \"Rank\": 35,\n        \"LocalizedName\": \"Mississauga\",\n        \"EnglishName\": \"Mississauga\",\n        \"PrimaryPostalCode\": \"L5B\",\n        \"Region\": {\n            \"ID\": \"NAM\",\n            \"LocalizedName\": \"North America\",\n            \"EnglishName\": \"North America\"\n        },\n        \"Country\": {\n            \"ID\": \"CA\",\n            \"LocalizedName\": \"Canada\",\n            \"EnglishName\": \"Canada\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"ON\",\n            \"LocalizedName\": \"Ontario\",\n            \"EnglishName\": \"Ontario\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"CA\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"EST\",\n            \"Name\": \"America/Toronto\",\n            \"GmtOffset\": -5,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": \"2022-03-13T07:00:00Z\"\n        },\n        \"GeoPosition\": {\n            \"Latitude\": 43.58,\n            \"Longitude\": -79.616,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 113,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 370,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [\n            {\n                \"Level\": 2,\n                \"LocalizedName\": \"Peel\",\n                \"EnglishName\": \"Peel\"\n            }\n        ],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"Alerts\",\n            \"ForecastConfidence\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    }\n]"
+				}
+			]
+		}
+	]
+}

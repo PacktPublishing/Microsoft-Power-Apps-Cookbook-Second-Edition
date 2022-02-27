@@ -1,0 +1,39 @@
+With(
+    {
+        claim: Patch(
+            Claims,
+            Defaults(Claims),
+            {Description: ClaimDescriptionTxt.Text}
+        )
+    },
+    ForAll(
+        MeasureMR.Measurements,
+        Patch(
+            Measurements,
+            Defaults(Measurements),
+            {
+                Claim: claim,
+                Height: ThisRecord.Height,
+                Lenght: ThisRecord.Length,
+                Unit: ThisRecord.Unit
+            }
+        )
+    );
+    ForAll(
+        MeasureMR.Photos,
+        Patch(
+            Images,
+            Defaults(Images),
+            {
+                Claim: claim,
+                Name: Substitute(
+                    Text(ThisRecord.ImageURI),
+                    "/SessionStorage/",
+                    ""
+                ),
+                Picture: ThisRecord.ImageURI
+            }
+        )
+    )
+);
+Navigate(MainScreen, Fade)
