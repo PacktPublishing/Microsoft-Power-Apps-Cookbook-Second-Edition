@@ -23,12 +23,9 @@
           },
           "Title": {
             "type": "string"
-          },
-          "Department": {
-            "type": "string"
           }
         },
-        "required": ["odata.type", "odata.id", "odata.etag", "odata.editLink", "Title", "Department"]
+        "required": ["odata.type", "odata.id", "odata.etag", "odata.editLink", "Title"]
       }
     }
   }
