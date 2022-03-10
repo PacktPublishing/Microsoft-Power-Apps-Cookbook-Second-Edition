@@ -1,6 +1,6 @@
 function OpenSidePanel(executionContext) {
   'use strict';
-  
+
   var selectedRecord = executionContext.data.entity;
   var selectedId = selectedRecord.getId().replace(/[{}]/g, "");
 
