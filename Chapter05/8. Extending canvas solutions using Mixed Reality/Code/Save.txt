@@ -14,7 +14,7 @@ With(
             {
                 Claim: claim,
                 Height: ThisRecord.Height,
-                Lenght: ThisRecord.Length,
+                Length: ThisRecord.Length,
                 Unit: ThisRecord.Unit
             }
         )
